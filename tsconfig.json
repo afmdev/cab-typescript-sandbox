@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"watch": true,
+		"lib": ["dom","es2020"], 
+		"outDir": "./built",
+	}, 
+	"include": ["./src/**/*"]
+}
