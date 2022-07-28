@@ -76,3 +76,13 @@ const getMuseums = async () => {
     const response = await fetch("museums");
     const data = await response.json();
 };
+const getData = async (url) => {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+};
+const genericFetchData = async (endpoint) => {
+    const request = await fetch(process.env.BE_HOST + endpoint);
+    const response = await request.json();
+    return response;
+};
